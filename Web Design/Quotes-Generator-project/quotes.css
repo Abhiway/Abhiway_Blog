@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgba(122, 139, 255, 255);
+}
+
+.container {
+    width: 600px;
+    height: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.love-head {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Poppins";
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.b-box {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    background-color: rgba(251, 112, 113, 255) !important;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: auto auto;
+    display: block;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    font-weight: bolder;
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+#box,
+#money_box {
+    width: 90%;
+    margin: auto auto;
+    height: 80px;
+    border: 1px solid rgba(251, 112, 113, 255) !important;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-weight: 400;
+    display: none;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 0) and (max-width: 576px) {
+    .container {
+        width: 93%;
+        margin: auto auto;
+    }
+    #box {
+        font-size: 0.9rem;
+    }
+}

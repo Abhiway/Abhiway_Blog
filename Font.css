@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(Fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(Fonts/Poppins/Poppins-Light.ttf);
+    font-weight: 3 00;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(Fonts/Poppins/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(Fonts/Poppins/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(Fonts/Poppins/Poppins-ExtraBold.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(Fonts/Poppins/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Fonts/Monserat/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Fonts/Monserat/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Fonts/Monserat/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Fonts/Monserat/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Fonts/Monserat/Montserrat-ExtraBold.ttf);
+    font-weight: 900;
+}

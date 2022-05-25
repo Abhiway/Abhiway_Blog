@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital clock</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+        }
+        
+        .container {
+            width: 650px;
+            height: auto;
+            color: #343a40 !important;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        
+        .box {
+            margin: 40px 50px;
+        }
+        
+        .head {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        .Time-box {
+            font-family: "Orbitron", sans-serif;
+            background-color: white;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            padding: 30px 0;
+            font-size: 3rem;
+            font-weight: 900;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        
+        .other-box {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin: 20px 0 0 0;
+            grid-column-gap: 20px;
+        }
+        
+        .month-box,
+        .date-box,
+        .year-box {
+            font-family: "Orbitron", sans-serif;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        
+        .name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 10px;
+        }
+        
+        #date-value,
+        #month-value,
+        #year-value {
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+        
+        #Am {
+            font-family: "Poppins", sans-serif;
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+        
+        @media (min-width: 0) and (max-width: 576px) {
+            .container {
+                width: 95%;
+            }
+            .box {
+                margin: 20px;
+            }
+            .Time-box {
+                font-size: 1.8rem;
+                padding: 20px;
+            }
+            .head {
+                font-size: 1.8rem;
+            }
+            .name {
+                font-size: 1rem;
+            }
+            .other-box {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                margin: 20px 0 0 0;
+                grid-column-gap: 10px;
+            }
+            .month-box,
+            .date-box,
+            .year-box {
+                padding: 10px;
+            }
+            #date-value,
+            #month-value,
+            #year-value {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body onload="startTime()">
+    <div class="container">
+        <div class="box">
+            <div class="head">Digital Clock</div>
+            <div class="Time-box">
+                <div id="Time">12:12</div>
+                <div id="Am">AM</div>
+            </div>
+            <div class="other-box">
+                <div class="date-box">
+                    <div class="name">Date</div>
+                    <div id="date-value">55</div>
+                </div>
+                <div class="month-box">
+                    <div class="name">Month</div>
+                    <div id="month-value">55</div>
+                </div>
+
+                <div class="year-box">
+                    <div class="name">year</div>
+                    <div id="year-value">55</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function startTime() {
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+            document.getElementById("Time").innerHTML = h + ":" + m + ":" + s;
+            setTimeout(startTime, 1000);
+
+            var date = d.getDate();
+            document.getElementById("date-value").innerHTML = date;
+
+            var month = d.getMonth() + 1;
+            document.getElementById("month-value").innerHTML = month;
+
+            var year = d.getFullYear();
+            document.getElementById("year-value").innerHTML = year;
+            if (h > 12) {
+                document.getElementById("Am").innerHTML = "PM";
+            } else {
+                document.getElementById("Am").innerHTML = "AM";
+            }
+        }
+    </script>
+</body>
+
+</html>

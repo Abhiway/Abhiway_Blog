@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+ :root {
+    --black: #222;
+    --red: #B70038;
+    --grey: #5D738D;
+}
+
+header {
+    margin: 40px 0;
+    background-color: white;
+}
+
+.logo .title {
+    font-size: 2rem;
+    color: var(--red);
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--grey);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--red);
+}
+
+
+/* .navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+} */
+
+section {
+    margin: 50px 00 0 0;
+    line-height: 30px;
+}
+
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.about-row {
+    margin: 50px 0;
+}
+
+.about-box {
+    padding: 0 30px;
+}
+
+.social-box {
+    margin-top: 50px;
+}
+
+.contact-box {
+    margin-top: 50px;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+
+/* p::first-letter {
+    padding-left: 10px;
+} */
+
+h6 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.f-main-box {
+    margin: 20px 0;
+}
+
+.f-sub-box {
+    margin-top: 20px;
+}
+
+.f-sub-box a {
+    color: white;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 8px 10px;
+    margin-right: 5px;
+    transition: all .3s ease-in-out;
+    opacity: 1;
+}
+
+.instgram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.youtube {
+    background: #FF0000;
+}
+
+.f-sub-box a:hover {
+    opacity: .8;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+span {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+span i {
+    padding-right: 5px;
+}
+
+.ft-item {
+    padding: 10px 0;
+}
+
+.ft-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+p a {
+    color: var(--black);
+    font-weight: 600;
+}
+
+p a:hover,
+span a:hover {
+    color: var(--red);
+    font-weight: 600;
+    border-bottom: 1px solid var(--red);
+}
+
+.so-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 6px;
+    transition: all .3s ease-in-out;
+    border: 1px solid #ECF0F1;
+    text-decoration: none;
+}
+
+.so-item i {
+    font-size: 2rem;
+    padding: 25px 0;
+    color: black;
+}
+
+.so-item:hover {
+    cursor: pointer;
+}
+
+
+/* .so-item i::after {
+    content: '';
+    color: white;
+} */
+
+.insta:hover {
+    color: white !important;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.what:hover {
+    color: white;
+    background: #25D366;
+}
+
+.twit:hover {
+    color: white;
+    background-color: #1DA1F2;
+}
+
+.you:hover {
+    color: white;
+    background: #FF0000;
+}
+
+.so-item:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+footer {
+    margin: 150px 0 0 0;
+    padding: 30px 0 20px 0;
+    /* background-color: #F4F6F8; */
+    border-top: 1px solid #ECF0F1;
+}
+
+.copy-right,
+.follow-box a {
+    font-weight: 400;
+}
+
+.follow-box a {
+    color: var(--black);
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: var(--grey);
+}
+
+.follow-box a:hover {
+    color: var(--red);
+}
