@@ -1,8 +1,10 @@
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
+            font-family: "Poppins";
         }
         
          :root {
@@ -18,12 +20,11 @@
             color: #212529;
             text-align: left;
             background-color: #fff;
-            font-family: "Poppins";
         }
         
          ::selection {
             background-color: #8490ff;
-            color: #fff;
+            color: white;
         }
         
         header {
@@ -31,11 +32,16 @@
             background-color: white;
         }
         
-        .logo .title {
+        .title {
             font-size: 2rem;
-            color: var(--red);
             font-family: 'Playfair Display', serif;
             font-weight: 700;
+            /* background-color: white;
+            background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; */
+            color: #8490ff;
+            text-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
         }
         
         .navbar-nav .nav-item {
@@ -50,25 +56,16 @@
         }
         
         .navbar-nav .nav-item .nav-link:hover {
-            color: var(--red);
+            background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         
         .navbar-toggler:focus,
         .navbar-toggler:active,
         .navbar-toggler-icon:focus {
-            outline: none;
-            box-shadow: none;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         }
-        /* header {
-            margin: 20px 0 0 0;
-            
-        }
-        
-      
-        
-      
-    
-         */
         
         .Top-box {
             padding: 100px 0 0 0;
@@ -79,7 +76,6 @@
             text-transform: uppercase;
             font-weight: 600;
             margin: 20px 0;
-            line-height: 1.2em!important;
         }
         
         p {
@@ -102,6 +98,7 @@
             margin: 0;
             font-size: 1rem;
             text-transform: uppercase;
+            color: var(--grey);
         }
         
         a {
@@ -354,4 +351,171 @@
         
         input::placeholder {
             font-size: 0.9rem;
+        }
+        
+        @media (min-width:0) and (max-width:576px) {
+            body {
+                line-height: 1.6rem;
+                overflow-x: hidden;
+            }
+            header {
+                margin: 10px 0 0 0;
+                padding: 0;
+            }
+            .logo .title {
+                font-size: 1.5rem;
+            }
+            .navbar-nav {
+                margin: 0;
+                padding: 10px 0;
+            }
+            .navbar-nav .nav-item .nav-link {
+                font-size: 0.9rem;
+            }
+            .Top-box {
+                padding: 30px 0;
+            }
+            .column {
+                padding: 0;
+                margin: 10px 0;
+            }
+            h5 {
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 2rem;
+                margin: 15px 0;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .primary-btn {
+                font-size: 0.9rem;
+            }
+            section {
+                margin: 0;
+                padding: 30px 0;
+                overflow-x: hidden;
+            }
+            .about-me-box,
+            .about-ex-box {
+                padding-top: 0px;
+            }
+            h2 {
+                font-size: 1.6rem;
+                margin: 15px 0;
+            }
+            .card:hover {
+                transform: scale(1.04);
+            }
+            .Education-box {
+                margin: 00px 0;
+            }
+            .work-box {
+                margin: 30px 0;
+            }
+            .work-item {
+                margin: 0 0 20px 0;
+            }
+            .work-box .nav-tabs .nav-link {
+                margin-right: 0;
+                font-size: 0.9rem;
+            }
+            .work-head {
+                font-size: 1rem;
+                margin-top: 10px;
+            }
+            .recent-link {
+                margin: 10px 0;
+            }
+            .progress-wrap {
+                margin-top: 30px;
+            }
+            .skill-name {
+                font-size: 1rem;
+            }
+            footer {
+                padding: 30px 0;
+                margin: 50px 0 0 0;
+            }
+            .ft-head {
+                margin-bottom: 10px;
+            }
+        }
+        
+        @media (min-width:577px) and (max-width:768px) {
+            header {
+                margin: 10px 0 0 0;
+                padding: 0;
+            }
+            .logo .title {
+                font-size: 1.8rem;
+            }
+            .navbar-nav {
+                margin: 0;
+                padding: 10px 0;
+            }
+            .navbar-nav .nav-item .nav-link {
+                font-size: 0.9rem;
+            }
+            section {
+                margin: 0;
+                padding: 30px 0;
+                overflow-x: hidden;
+            }
+            .Top-box {
+                padding: 30px 0;
+            }
+            h5 {
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 2.3rem;
+                margin: 15px 0;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            h2,
+            .exp-head {
+                font-size: 1.5rem;
+                margin: 15px 0s;
+            }
+            .progress-wrap {
+                margin-top: 30px;
+            }
+            .column-md {
+                margin-top: 20px;
+            }
+            .card {
+                padding: 15px;
+            }
+            h5[class="card-title"] {
+                font-size: 1.3rem;
+                font-weight: 600;
+                text-align: start;
+                margin: 0 0 1rem 0;
+            }
+            .work-box {
+                margin: 20px 0;
+            }
+            .work-box .nav-tabs .nav-link {
+                margin-right: 0;
+                font-size: 0.9rem;
+            }
+            .work-head {
+                font-size: 1rem;
+                margin-top: 10px;
+            }
+            .recent-link {
+                margin: 10px 0;
+                font-size: 1rem;
+            }
+            footer {
+                padding: 30px 0;
+                margin: 50px 0 0 0;
+            }
+            .ft-head {
+                margin-bottom: 10px;
+            }
         }

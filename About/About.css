@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +21,6 @@ header {
     font-size: 2rem;
     color: var(--red);
     font-family: 'Playfair Display', serif;
-    font-weight: 600;
 }
 
 .navbar-nav .nav-item {
@@ -38,13 +38,11 @@ header {
     color: var(--red);
 }
 
-
-/* .navbar-toggler:focus,
+.navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
-} */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
 
 section {
     margin: 50px 00 0 0;
@@ -215,7 +213,7 @@ span a:hover {
     background: #FF0000;
 }
 
-.so-item:hover {
+.row .col .so-item:hover {
     transform: scale(1.1);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
@@ -241,4 +239,84 @@ footer {
 
 .follow-box a:hover {
     color: var(--red);
+}
+
+@media (min-width:0) and (max-width:576px) {
+    header {
+        margin: 10px 0 10px 0;
+    }
+    .logo .title {
+        font-size: 1.5rem;
+    }
+    .navbar-nav {
+        margin: 0;
+        padding: 10px 0;
+    }
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.9rem;
+    }
+    section {
+        margin: 30px 0;
+    }
+    .about-row,
+    .f-main-box,
+    .social-box,
+    .contact-box {
+        margin: 30px 0;
+    }
+    .about-box {
+        padding: 0;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .f-sub-box a {
+        padding: 8px 10px;
+    }
+    .so-item i {
+        font-size: 1.8rem;
+        padding: 20px 0;
+        color: black;
+    }
+    footer {
+        margin: 50px 0 0 0;
+        padding: 20px 0 10px 0;
+    }
+    .footer-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .copy-right {
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+    .follow-box a {
+        font-size: 1.1rem;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width:577px) and (max-width:768px) {
+    header {
+        margin: 30px 0;
+        padding: 0;
+    }
+    .logo .title {
+        font-size: 1.8rem;
+    }
+    section {
+        margin: 30px 0;
+    }
+    .about-box {
+        padding: 0;
+    }
+    .about-row,
+    .social-box {
+        margin: 30px 0;
+    }
+    .so-item i {
+        font-size: 1.5rem;
+        padding: 20px;
+        color: black;
+    }
 }

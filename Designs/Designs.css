@@ -6,72 +6,6 @@
     font-family: "Montserrat";
 }
 
-@font-face {
-    font-family: "Poppins";
-    src: url(Fonts/Poppins/Poppins-Regular.ttf);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url(Fonts/Poppins/Poppins-Light.ttf);
-    font-weight: 3 00;
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url(Fonts/Poppins/Poppins-SemiBold.ttf);
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url(Fonts/Poppins/Poppins-Bold.ttf);
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url(Fonts/Poppins/Poppins-ExtraBold.ttf);
-    font-weight: 900;
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url(Fonts/Poppins/Poppins-Medium.ttf);
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url(/Fonts/Monserat/Montserrat-Regular.ttf);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url(/Fonts/Monserat/Montserrat-Medium.ttf);
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url(/Fonts/Monserat/Montserrat-SemiBold.ttf);
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url(/Fonts/Monserat/Montserrat-Bold.ttf);
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url(/Fonts/Monserat/Montserrat-ExtraBold.ttf);
-    font-weight: 900;
-}
-
  :root {
     --black: #222;
     --red: #B70038;
@@ -107,12 +41,41 @@ header {
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 section {
-    margin: 50px 0;
+    margin: 50px 0 0 0;
+}
+
+p {
+    margin: 15px 0;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+footer {
+    margin: 150px 0 0 0;
+    padding: 30px 0 20px 0;
+    border-top: 1px solid #ECF0F1;
+}
+
+.copy-right,
+.follow-box a {
+    font-weight: 400;
+}
+
+.follow-box a {
+    color: var(--black);
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: var(--grey);
+}
+
+.follow-box a:hover {
+    color: var(--red);
 }
 
 .img-box img {
@@ -134,6 +97,10 @@ section {
 .img-box:hover img {
     transform: scale(1.1);
     opacity: .9;
+}
+
+.design-item:hover p {
+    color: var(--red);
 }
 
 .show {
@@ -196,33 +163,50 @@ section {
     cursor: pointer;
 }
 
-p {
-    margin: 15px 0;
-    text-transform: capitalize;
-    font-weight: 600;
-    font-size: 1.3rem;
-    text-align: center;
+@media (min-width:0) and (max-width:576px) {
+    header {
+        margin: 10px 0 10px 0;
+        padding: 0;
+    }
+    .logo .title {
+        font-size: 1.5rem;
+    }
+    .navbar-nav {
+        border-bottom: 1px solid #ECF0F1;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.9rem;
+    }
+    footer {
+        margin: 50px 0 0 0;
+        padding: 20px 0 10px 0;
+    }
+    .footer-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .copy-right {
+        padding-bottom: 5px;
+        font-size: 0.9rem;
+    }
+    .follow-box a {
+        font-size: 1.1rem;
+        margin-right: 20px;
+    }
 }
 
-footer {
-    margin: 150px 0 0 0;
-    padding: 30px 0 20px 0;
-    /* background-color: #F4F6F8; */
-    border-top: 1px solid #ECF0F1;
-}
-
-.copy-right,
-.follow-box a {
-    font-weight: 400;
-}
-
-.follow-box a {
-    color: var(--black);
-    font-size: 1.2rem;
-    margin-right: 10px;
-    color: var(--grey);
-}
-
-.follow-box a:hover {
-    color: var(--red);
+@media (min-width:577px) and (max-width:768px) {
+    header {
+        margin: 30px 0;
+        padding: 0;
+    }
+    .logo .title {
+        font-size: 1.8rem;
+    }
+    footer {
+        margin: 80px 0 0 0;
+        padding: 30px 0 20px 0;
+    }
 }
