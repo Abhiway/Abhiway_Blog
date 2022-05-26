@@ -7,6 +7,36 @@
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Fonts/Monserat/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Fonts/Monserat/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Fonts/Monserat/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Fonts/Monserat/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Fonts/Monserat/Montserrat-ExtraBold.ttf);
+    font-weight: 900;
+}
+
  :root {
     --black: #222;
     --red: #B70038;
