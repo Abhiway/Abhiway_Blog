@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+    <title>work-1</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+        @font-face {
+            font-family: "Poppins";
+            src: url("/Fonts/Poppins/Poppins-SemiBold.ttf");
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "Poppins";
+            src: url("/Fonts/Poppins/Poppins-Regular.ttf");
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "Poppins";
+            src: url("/Fonts/Poppins/Poppins-Bold.ttf");
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "Poppins";
+            src: url("/Fonts/Poppins/Poppins-Medium.ttf");
+            font-weight: 500;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: auto auto;
+            background-image: linear-gradient( to right, #a0b5eb, #93c8f0, #98d8ec, #ade5e7, #c9f0e4);
+        }
+        
+        .ItemBox {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            background-color: white;
+        }
+        
+        .badge {
+            font-family: "Poppins";
+            background-color: #191847;
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+            padding: 3px 13px;
+            border-radius: 6px;
+        }
+        
+        .head {
+            font-family: "Poppins";
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        
+        .D-price {
+            text-decoration: line-through;
+            padding: 0 5px 0 0;
+            font-family: "Poppins";
+            font-weight: 400;
+        }
+        
+        .O-price {
+            font-family: "Poppins";
+            font-weight: 600;
+            font-size: 2rem;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        
+        .of-validate {
+            font-family: "Poppins";
+            font-weight: 400;
+            color: grey;
+            font-size: 0.9rem;
+        }
+        
+        .cart-btn {
+            font-family: "Poppins";
+            width: 100%;
+            background-color: #4788e9;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding: 14px;
+            text-align: center;
+            font-weight: 400;
+            color: white;
+            border-radius: 7px;
+            margin: 20px 0;
+            border: 1px solid #4788e9;
+        }
+        
+        .sto-name {
+            font-family: "Poppins";
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .la-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .add-cart-btn,
+        .wish-btn {
+            margin: 20px 0;
+            width: 49%;
+            font-family: "Poppins";
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding: 14px;
+            font-weight: 600;
+            color: #191847;
+            border-radius: 10px;
+            border: 1px solid #c9c9da;
+            background-color: white;
+        }
+        
+        i {
+            font-size: 1.2rem;
+            margin: 0 7px 0 0;
+        }
+        
+        @media (max-width: 556px) and (min-width: 0) {
+            .ItemBox {
+                padding: 30px;
+                margin: 20px;
+            }
+            .head {
+                font-size: 1.1rem;
+                margin: 10px 0;
+            }
+            .O-price {
+                font-size: 1.5rem;
+            }
+            .cart-btn {
+                padding: 10px;
+            }
+            .la-box {}
+            .add-cart-btn,
+            .wish-btn {
+                margin: 10px;
+                width: 50%;
+                font-size: 0.8rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ItemBox">
+        <div class="s-box">
+            <img src="Images/shopcart-image.png" alt="headset" />
+        </div>
+        <div class="s-box">
+            <span class="badge">Free Shipping</span>
+            <h1 class="head">Razer Kraken Kitty Edt Gaming Headset Quartz</h1>
+            <div class="D-price">1,599 ,</div>
+            <div class="O-price">799,-</div>
+            <div class="of-validate">
+                The offer is valid until April 3 or as long as stock lasts!
+            </div>
+            <button class="cart-btn">Add to Cart</button>
+
+            <div class="sto-name">50+ pcs. in stock.</div>
+
+            <div class="la-box">
+                <button class="add-cart-btn">
+            <i class="bi bi-bag-check"></i> Add to cart
+          </button>
+                <button type="submit" class="wish-btn">
+            <i class="bi bi-heart"></i> Add to Wishlist
+          </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
